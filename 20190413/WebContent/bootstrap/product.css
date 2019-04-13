@@ -1,0 +1,45 @@
+body {
+	text-align: center;
+}
+.col-sm-4{
+	border: 1px solid red;
+	padding: 5px;
+}
+.prod{
+	width: 250px;
+	border-radius: 10px;
+	box-shadow: 0 0 5px gray;
+	margin: 10px;
+	text-align: center;
+	position: relative;
+	padding-bottom: 30px;
+	display: inline-block;	
+}
+.prod>.name {
+	font-variant: small-caps;
+	color: red;
+	padding: 5px;
+}
+.prod>.image {
+	height: 150px;
+	max-width: 95%;
+}
+.promo {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.prod>.price {
+	position: absolute;
+	left: 0px;
+	bottom: 0px;
+	font-size: 30px;
+	font-family: impact;
+	color: green;
+}
+.prod>.icon {
+	position: absolute;
+	bottom: 0px;
+	right:5px;
+	width: 25px;//chieu rong cua the div .prod, anh la inline co size = 24*24
+}
