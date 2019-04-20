@@ -1,6 +1,7 @@
 package com.guessNumber;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Mang {
@@ -8,8 +9,9 @@ public class Mang {
 	private static String[] units = {"","ngan","trieu","ty"};
 	public static void main(String[] args) {
 		//basic();
-		int n = 123;
-		read(n);
+//		int n = 123;
+//		read(n);
+		sort();
 	}
 
 	private static void basic() {
@@ -76,5 +78,16 @@ public class Mang {
 			}
 		}
 		
+	}
+
+	private static void sort() {
+		int x, a[] = {3, 9, 12, 1, 7, 5};
+		System.out.println(Arrays.toString(a));
+		Arrays.sort(a);
+		System.out.println(Arrays.toString(a));
+		int i  = Arrays.binarySearch(a, 5);
+//		System.out.printf("i = %d, a[%d] = %.0f",i ,i, a[i]);
+		Arrays.fill(a, 2019);
+		System.out.println(Arrays.toString(a));
 	}
 }
