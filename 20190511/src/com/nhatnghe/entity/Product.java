@@ -1,6 +1,7 @@
 package com.nhatnghe.entity;
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -17,7 +18,8 @@ public class Product {
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	Integer id;
-	String name;
+	@Column(name="Name")
+	String name2019;
 	Double unitPrice;
 	String image;
 	@Temporal(TemporalType.DATE)
@@ -42,21 +44,21 @@ public class Product {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Double getUnitPrice() {
-		return unitPrice;
-	}
-
-	public void setUnitPrice(Double unitPrice) {
-		this.unitPrice = unitPrice;
-	}
+//	public String getName() {
+//		return name;
+//	}
+//
+//	public void setName(String name) {
+//		this.name = name;
+//	}
+//
+//	public Double getUnitPrice() {
+//		return unitPrice;
+//	}
+//
+//	public void setUnitPrice(Double unitPrice) {
+//		this.unitPrice = unitPrice;
+//	}
 
 	public String getImage() {
 		return image;
