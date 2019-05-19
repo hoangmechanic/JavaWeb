@@ -7,7 +7,7 @@
 	<title>Servlet/JSP Tutorials</title>
 </head>
 <body>
-	<h1> Web info</h1>
+	<h1> Web info: ${visitor}</h1>
 	<img src="images/Koala.jpg">
 	<ul>
 		<li>Context path: ${pageContext.request.contextPath}</li>
