@@ -14,6 +14,10 @@ import javax.servlet.http.HttpSession;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
+import org.hibernate.Session;
+
+import com.nhatnghe.entity.HiberUtil;
+
 @WebListener
 public class AppListener implements ServletContextListener,HttpSessionListener{
 
@@ -29,7 +33,8 @@ public class AppListener implements ServletContextListener,HttpSessionListener{
 			e1.printStackTrace();
 		}
 		System.out.println("AppListener.contextDestroyed(): "+path.toString());
-		
+		// Dong database
+		HiberUtil.shutdown();
 	}
 
 	@Override
@@ -41,6 +46,7 @@ public class AppListener implements ServletContextListener,HttpSessionListener{
 		} catch (NumberFormatException | IOException e1) {
 		}
 		System.out.println("AppListener.contextInitialized():"+ path.toString());
+		Session session = HiberUtil.getSessionFactory().openSession();
 	}
 
 	@Override
