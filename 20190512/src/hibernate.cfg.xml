@@ -13,5 +13,6 @@
     
     <mapping class="com.nhatnghe.entity.Category"/>
     <mapping class="com.nhatnghe.entity.Product"/>
+    <mapping class="com.nhatnghe.entity.Customer"/>
   </session-factory>
 </hibernate-configuration>

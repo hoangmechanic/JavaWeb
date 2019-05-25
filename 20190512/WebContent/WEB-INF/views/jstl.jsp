@@ -1,6 +1,7 @@
 <%@ page pageEncoding ="utf-8"%>
 <%@ taglib uri="http://java.sun.com/jstl/core_rt" prefix="c"%>
 <!-- @ Ctrl + sp, t Ctrl + sp, u Ctrl + sp, Ctrl + sp selec core_rt, p Ctrl + sp, c-->
+<%@ taglib uri="http://java.sun.com/jstl/fmt_rt" prefix="f"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,9 +11,12 @@
 </head>
 <body>
 	<h1> Java Standart Tag Library</h1>
+	<c:set var="amount" value ="${item.quantity *item.unitPrice }"></c:set>
 	<ul>
 		<li>Name: ${item.name}</li>
 		<li>Unit price: ${item.unitPrice}</li>
+		<li>Value: <f:formatNumber value="${amount}" pattern="#,###.00"/></li>
+		<li>Date: <f:formatDate value="${item.productDate}" pattern="EEEE,MMM-DD-YYYY"/></li>
 		<li>Date: ${item.productDate}</li>
 		<li>Category: ${item.category.nameVN}</li>
 		<li>Special:
