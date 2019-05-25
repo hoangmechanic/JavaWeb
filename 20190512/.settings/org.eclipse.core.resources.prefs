@@ -1,3 +1,5 @@
 eclipse.preferences.version=1
 encoding//src/com/nhatnghe/cookie/CookieServlet.java=UTF-8
+encoding//src/com/nhatnghe/servlet/ELServlet.java=UTF-8
 encoding//src/com/nhatnghe/servlet/HelloController.java=UTF-8
+encoding//src/com/nhatnghe/servlet/JSTLServlet.java=UTF-8
