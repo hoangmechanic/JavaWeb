@@ -23,6 +23,7 @@
 <body>
 	<h2>ĐĂNG KÍ THÀNH VIÊN</h2>
 	<form action="register.php" method ="post">
+	<h1>${message}</h1>
 	<div>
 			<label>Họ và tên</label>
 			<input type ="text" name = "fullname">

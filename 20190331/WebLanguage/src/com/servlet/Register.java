@@ -14,6 +14,8 @@ public class Register extends HttpServlet {
 	}
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		req.setAttribute("message","Hello World 2");
+		
 		String fullname = req.getParameter("fullname");
 		String gender = req.getParameter("gender");
 		String country = req.getParameter("country");
