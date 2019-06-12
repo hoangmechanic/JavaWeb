@@ -8,8 +8,12 @@ Ten may tinh HP hinh dang dep
 Hp envi13
 
 Tailieu
-https://classroom.google.com/r/MzUyODAzMDMzMDBa/sort-last-name
+https://classroom.google.com/r/MzUyODAzMDMzMDBa
 Dang nhap by
 hoangmechatronics@gmail.com
 
 https://www.journaldev.com/java-tutorial-java-ee-tutorials
+
+Autowired list of bean
+@Autowired(required = false)
+https://www.baeldung.com/spring-injecting-collections

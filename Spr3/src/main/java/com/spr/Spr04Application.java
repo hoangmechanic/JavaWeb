@@ -14,10 +14,10 @@ import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfigurat
 	HibernateJpaAutoConfiguration.class 
 })
 
-public class Spr03Application {
+public class Spr04Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Spr03Application.class, args);
+		SpringApplication.run(Spr04Application.class, args);
 	}
 
 }

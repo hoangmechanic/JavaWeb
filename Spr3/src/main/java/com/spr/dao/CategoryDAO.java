@@ -14,16 +14,18 @@ import com.spr.entity.Category;
 
 @Transactional
 @Repository
-public class CategoryDAO {
+public class CategoryDAO implements IDAO<Category, Integer> {
 	@Autowired
 	SessionFactory factory;
 
+	@Override
 	public Category findByID(Integer id) {
 		Session session = factory.getCurrentSession();
 		Category entity = session.find(Category.class, id);
 		return entity;
 	}
 
+	@Override
 	public List<Category> findAll() {
 		Session session = factory.getCurrentSession();
 		String hql = "FROM Category";
@@ -33,16 +35,19 @@ public class CategoryDAO {
 		return list;
 	}
 
+	@Override
 	public void create(Category entity) {
 		Session session = factory.getCurrentSession();
 		session.persist(entity);
 	}
-	
+
+	@Override
 	public void update(Category entity) {
 		Session session = factory.getCurrentSession();
 		session.merge(entity);
 	}
 
+	@Override
 	public void delete(int id) {
 		Session session = factory.getCurrentSession();
 		Category entity = session.find(Category.class, id);

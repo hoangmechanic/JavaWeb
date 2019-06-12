@@ -11,42 +11,49 @@ import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.spr.entity.Category;
+import com.spr.entity.Customer;
 
 @Transactional
 @Repository
-public class CustomerDAO {
+public class CustomerDAO implements IDAO<Customer, String>{
 	@Autowired
 	SessionFactory factory;
+	
 
-	public Category findByID(Integer id) {
+	@Override
+	public List<Customer> findAll() {
+		String hql = "FROM Customer";
 		Session session = factory.getCurrentSession();
-		Category entity = session.find(Category.class, id);
-		return entity;
-	}
-
-	public List<Category> findAll() {
-		Session session = factory.getCurrentSession();
-		String hql = "FROM Category";
-		TypedQuery<Category> query = session.createQuery(hql, Category.class);
-		List<Category> list = query.getResultList();
-
+		TypedQuery<Customer> query = session.createQuery(hql, Customer.class);
+		List<Customer> list = query.getResultList();
 		return list;
 	}
 
-	public void create(Category entity) {
+	@Override
+	public void create(Customer entity) {
 		Session session = factory.getCurrentSession();
 		session.persist(entity);
 	}
-	
-	public void update(Category entity) {
+
+	@Override
+	public void update(Customer entity) {
 		Session session = factory.getCurrentSession();
-		session.merge(entity);
+		session.merge(entity);	
 	}
 
+	
+
+	@Override
+	public Customer findByID(String id) {
+		Session session = factory.getCurrentSession();
+		Customer entity = session.find(Customer.class, id);
+		return entity;
+	}
+
+	@Override
 	public void delete(int id) {
 		Session session = factory.getCurrentSession();
-		Category entity = session.find(Category.class, id);
+		Customer entity = session.find(Customer.class, id);
 		session.remove(entity);
-		
 	}
 }

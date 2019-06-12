@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.spr</groupId>
-	<artifactId>spr04</artifactId>
+	<artifactId>Sspr04</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-	<name>Spr03</name>
+	<name>Spr04</name>
 	<description>Nhat Nghe with Spring Boot</description>
 
 	<properties>
@@ -34,6 +34,12 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-mail</artifactId>
 			<scope>test</scope>
 		</dependency>
 		

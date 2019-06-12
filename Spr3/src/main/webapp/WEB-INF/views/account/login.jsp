@@ -11,14 +11,11 @@
 <body>
 	<h1>Category Manager</h1>
 	<h4>${message}</h4>
-	<form action="account/login.php" method="post">
-		<input name="id" placeholder="Id" value="${item.id}">
-		<input name="pass" placeholder="Password">
+	<form action="login.php" method="post">
+		<input name="id" placeholder="Id" value="${cookie.id.value}">
+		<input name="pass" placeholder="Password" value="${cookie.pw.value}">
 		<input name="remember" type="checkbox" value="true"> Remember me ?
 		<hr>
-		<button formaction="category/insert.php">Insert</button>
-		<button formaction="category/update.php">Update</button>
-		<button formaction="category/delete.php">Delete</button>
 		<button>Login</button>
 	</form>
 
