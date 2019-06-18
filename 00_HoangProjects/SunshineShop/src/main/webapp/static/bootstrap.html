@@ -1,0 +1,159 @@
+<div class="row">
+	<div class="col">.col</div>
+	<div class="col-sm-4">.col</div>
+</div>
+
+<div class="alert alert-success">
+    ${message}
+</div>
+  
+<table class="table table-hover table-bordered">
+	<thead>
+		<tr>
+			<th>Firstname</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>John</td>
+		</tr>
+	</tbody>
+</table>
+
+<form action="/action_page.php">
+	<div class="form-group">
+		<label>Input</label> 
+		<input name="name" class="form-control">
+	</div>
+	
+	<div class="form-group">
+		<label>Select Box</label> 
+		<select name="name" class="form-control">
+			<option value="value">Text</option>
+		</select>
+	</div>
+	
+	<div class="form-group">
+		<label>Textarea</label> 
+		<textarea name="name" class="form-control" rows="4"></textarea>
+	</div>
+	
+	<div class="form-group">
+		<label>Input group</label> 
+		<div class="input-group mb-3">
+	    	<input class="form-control">
+	    	<div class="input-group-append">
+	      		<span class="input-group-text">@gmail.com</span>
+	    	</div>
+	  	</div>
+	</div>
+	
+	<div class="form-group">
+		<label>Radio Button Group</label>
+		<div class="form-control">
+			<label> 
+				<input  type="radio" name="gender" value="true"> Male?
+			</label>
+			<label> 
+				<input  type="radio" name="gender" value="false"> Female?
+			</label>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<label>Checkbox Group</label>
+		<div class="form-control">
+			<label> 
+				<input  type="checkbox" name="hobby" value="true"> Traveling
+			</label>
+			<label> 
+				<input  type="checkbox" name="hobby" value="true"> Music
+			</label>
+		</div>
+	</div>
+
+	<div class="form-group form-check">
+		<label class="form-check-label"> 
+			<input class="form-check-input" type="checkbox"> Checkbox?
+		</label>
+	</div>
+	
+	<button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<div class="card">
+	<div class="card-header">Header</div>
+	<div class="card-body">Content</div>
+	<div class="card-footer">Footer</div>
+</div>
+
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">Action item</a>
+</div>
+
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+	<a class="navbar-brand" href="#">Navbar</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#collapsor">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Navbar links -->
+	<div class="collapse navbar-collapse" id="collapsor">
+		<ul class="navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
+			<li class="nav-item"><a class="nav-link" href="#">FAQs</a></li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown"> Account </a>
+				<div class="dropdown-menu">
+					<a class="dropdown-item" href="#">Login</a> 
+					<a class="dropdown-item" href="#">Register</a> 
+				</div>
+			</li>
+		</ul>
+	</div>
+</nav>
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs">
+	<li class="nav-item">
+		<a class="nav-link active" data-toggle="tab" href="#tab1">Tab 1</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link" data-toggle="tab" href="#tab2">Tab 2</a>
+	</li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+	<div class="tab-pane container active" id="tab1">Content 1</div>
+	<div class="tab-pane container fade" id="tab2">Content 2</div>
+</div>
+
+<!-- Button to Open Dialog -->
+<button class="btn btn-primary" value="Open Dialog" data-toggle="modal" data-target="#dialog">
+	Open Dialog
+</button>
+<!-- Dialog -->
+<div class="modal fade" id="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h4 class="modal-title">Title</h4>
+				<button class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">Body</div>
+			<div class="modal-footer">
+				<button class="btn btn-danger" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<ul class="pagination">
+	<li class="page-item"><a class="page-link" href="#">|&lt;</a></li>
+	<li class="page-item"><a class="page-link" href="#">&lt;&lt;</a></li>
+	<li class="page-item disabled"><a class="page-link" href="#">2/15</a></li>
+	<li class="page-item"><a class="page-link" href="#">&gt;&gt;</a></li>
+	<li class="page-item"><a class="page-link" href="#">&gt;|</a></li>
+</ul>
