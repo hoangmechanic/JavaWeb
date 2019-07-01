@@ -21,7 +21,7 @@ public class TilesConfiguration {
 	public TilesConfigurer getTilesConfigurer() {
 		TilesConfigurer tilesConfigurer = new TilesConfigurer();
 		//"https://tiles.apache.org/framework/tutorial/basic/pages.html"
-		tilesConfigurer.setDefinitions("/WEB-INF/tiles/tiles-config.xml");
+		tilesConfigurer.setDefinitions("/WEB-INF/tiles.xml");
 		return tilesConfigurer;
 	}
 }
