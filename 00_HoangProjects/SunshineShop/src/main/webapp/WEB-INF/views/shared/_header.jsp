@@ -1,13 +1,3 @@
-<%@ page pageEncoding="utf-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-	<base href="${pageContext.request.contextPath}/">
-	<meta charset="utf-8">
-	<title>Insert title here</title>
-</head>
-<body>
-	<h1>Spring MVC</h1>
-	<h4>${message}</h4>
-</body>
-</html>
+<a href="" class="logo">
+	<img src="static/images/headerPanel.jpg">
+</a>

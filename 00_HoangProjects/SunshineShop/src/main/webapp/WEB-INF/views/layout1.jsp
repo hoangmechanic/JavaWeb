@@ -24,33 +24,29 @@
     <script src="/static/js/bootstrap.min.js"></script>
 	
 	<!-- eStore -->
-    <link href="/static/css/sunshineshop.css" rel="stylesheet" />
-    <script src="/static/js/sunshineshop.js"></script>
+    <link href="/static/css/sunshineShop.css" rel="stylesheet" />
+    <script src="/static/js/sunshineShop.js"></script>
     
 </head>
 <body>
-    <!--<div class="container"> // Short screen-->
-   <div class="container-fluid"> 
-
+    <div class="container">
    		<!-- Header -->
-		<header>
-			<jsp:include page="shared/_header.jsp"></jsp:include>
-		</header>
+		<div><h1>Header</h1></div>
 		<!-- Header -->
 
 		<!-- Menu -->
-		<jsp:include page="shared/_menu.jsp"></jsp:include>
+		<div><h1>Menu</h1></div>
 		<!-- Menu -->
 
 		<!-- Body -->
         <div class="yourName row">
 			<!-- Left -->
 			<article class="col-xs-12 col-sm-9">
-                <tiles:insertAttribute name="body"></tiles:insertAttribute>
+                <div>Left</div>
             </article>
 			<!-- Right -->
 			<aside class="col-xs-4 col-sm-3">
-				<jsp:include page="shared/_cart.jsp"></jsp:include>
+				<div>Right</div>
 			</aside>
         </div>
 		<!-- Body -->
@@ -63,8 +59,8 @@
 				</div>
 			</footer>
 		</div>
+
 		<!-- Footer -->
-		
- 		</div>
+    </div>
 </body>
 </html>
