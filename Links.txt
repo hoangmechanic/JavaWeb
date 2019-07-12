@@ -17,3 +17,7 @@ https://www.journaldev.com/java-tutorial-java-ee-tutorials
 Autowired list of bean
 @Autowired(required = false)
 https://www.baeldung.com/spring-injecting-collections
+
+AngularJs
+https://riptutorial.com/angularjs/example/10751/angular-fromjson
+https://riptutorial.com/Download/angularjs.pdf

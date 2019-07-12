@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+
+<head>
+  <jdoc:include type="head" />
+
+  <link rel="stylesheet" href="http://172.29.139.144/adp/templates/journeyblogred/css/jquery.slide.css" type="text/css" media="all" />
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="http://172.29.139.144/adp/templates/journeyblogred/js/jquery.slide.js"></script>
+
+  <script type="text/javascript">
+    var $j = jQuery.noConflict();
+    $j(document).ready(
+      function() {
+        var o = {
+          // auto play
+          isAutoSlide: true,
+          // pause on hover
+          isHoverStop: false,
+          // pause when window loses focus
+          isBlurStop: true,
+          // shows pagination bullets
+          isShowDots: false,
+          // shows navigation arrows
+          isShowArrow: true,
+          // shows navigation arrows on hover
+          isHoverShowArrow: false,
+          // load all images on load
+          isLoadAllImgs: false,
+          // sliding speed
+          slideSpeed: 5000,
+          // switching speed
+          switchSpeed: 500,
+          // click, mouseover or mouseenter
+          dotsEvent: 'click',
+          // default CSS classes
+          dotsClass: 'dots',
+          dotActiveClass: 'active',
+          arrowClass: 'arrow',
+          arrowLeftClass: 'arrow-left',
+          arrowRightClass: 'arrow-right'
+        };
+
+        $j('#slide1').slide(o);
+      });
+  </script>
+
+</head>
+
+<body>
+  <div class="slide" id="slide1" style="box-shadow: 5px 5px #a1a1a14f;">
+    <ul id="ul1">
+      <li data-bg="http://172.29.139.144/adp/images/lunch/1.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/2.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/3.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/4.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/5.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/6.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/7.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/8.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/9.JPG"></li><li data-bg="http://172.29.139.144/adp/images/lunch/10.JPG"></li>    </ul>
+  </div>
+</body>
+
+</html>
