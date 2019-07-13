@@ -1,0 +1,41 @@
+PHẦN 1: WEBSITE BÁN HÀNG
+1. Chuẩn bị dự án
++ Layout
++ CSDL
++ Entity
++ DAO
++ Thư viện
+2. Trưng bày hàng hóa
++ Hiển thị loại hàng lên layout
++ Hiển thị hàng hóa theo loại
++ Hiển thị hàng hóa tìm kiếm
++ Hiển thị hàng hóa đặc biệt
++ Hiển thị chi tiết hàng hóa
++ Đánh dấu hàng yêu thích
++ Gửi hàng hóa cho bạn bè
+3. Giỏ hàng điện tử
++ Mô hình giỏ hàng điện tử (CartService)
++ Chọn hàng (ajax)
++ Hiển thị thông tin giỏ hàng
++ Xóa mặt hàng khỏi giỏ
++ Cập nhật số lượng
++ Xóa sách giỏ
++ Hiệu ứng bay vào giỏ
+4. Thành viên
++ Đăng nhập, đăng xuất
++ Đăng ký, kích hoạt
++ Đổi mật khẩu
++ Quên mật khẩu
++ Cập nhật thông tin tài khoản
+5. Security
++ AuthInterceptor
++ AccountController.login()
+6. Đặt hàng & quản lý đơn hàng
++ order/checkout
++ order/purchase
++ order/detail
++ order/items
+PHẦN 2: ADMIN TOOL
+1. Layout
+2. Quản lý dữ liệu
+3. Tổng hợp - Thống kê
