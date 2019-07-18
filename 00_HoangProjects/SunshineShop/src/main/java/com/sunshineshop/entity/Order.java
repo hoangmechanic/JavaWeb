@@ -13,7 +13,7 @@ import javax.persistence.TemporalType;
 
 @Table(name="Orders")
 @Entity
-public class Orders implements Serializable {
+public class Order implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
