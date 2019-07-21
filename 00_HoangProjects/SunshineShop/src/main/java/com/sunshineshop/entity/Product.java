@@ -2,14 +2,21 @@ package com.sunshineshop.entity;
 
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import net.minidev.json.annotate.JsonIgnore;
 
 @Entity
 @Table(name = "Products")
@@ -25,12 +32,20 @@ public class Product implements Serializable {
 	@Temporal(TemporalType.TIMESTAMP)
 	private Date productDate;
 	private boolean availale;
-	private int categoryId;
+
+	@ManyToOne()
+	@JoinColumn(name="categoryId")
+	private Category category;
 	private int quantity;
 	private String description;
 	private float discount;
 	private int viewCount;
 	private boolean special;
+
+	@JsonIgnore
+	@OneToMany(mappedBy="product",fetch=FetchType.EAGER)
+	private List<OrderDetail> orderDetails;
+	
 	public int getId() {
 		return id;
 	}
@@ -67,11 +82,11 @@ public class Product implements Serializable {
 	public void setAvailale(boolean availale) {
 		this.availale = availale;
 	}
-	public int getCategoryId() {
-		return categoryId;
+	public Category getCategory() {
+		return category;
 	}
-	public void setCategoryId(int categoryId) {
-		this.categoryId = categoryId;
+	public void setCategoryId(Category category) {
+		this.category = category;
 	}
 	public int getQuantity() {
 		return quantity;

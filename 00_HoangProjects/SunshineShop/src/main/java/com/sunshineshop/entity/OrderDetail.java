@@ -6,6 +6,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -17,10 +19,21 @@ public class OrderDetail implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	private int orderId;
-	private int productId;
+
+	@ManyToOne()
+	@JoinColumn(name= "orderId")
+	private Order order;
+
+	@ManyToOne
+	@JoinColumn(name = "productId")
+	private Product product;
+
+	
 	private float unitPrice;
 	private int quantity;
 	private float discount;
+
+	
 	public int getId() {
 		return id;
 	}
@@ -33,11 +46,11 @@ public class OrderDetail implements Serializable{
 	public void setOrderId(int orderId) {
 		this.orderId = orderId;
 	}
-	public int getProductId() {
-		return productId;
+	public Product getProductd() {
+		return product;
 	}
-	public void setProductId(int productId) {
-		this.productId = productId;
+	public void setProduct(Product product) {
+		this.product = product;
 	}
 	public float getUnitPrice() {
 		return unitPrice;

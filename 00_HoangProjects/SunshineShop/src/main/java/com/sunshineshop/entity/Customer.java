@@ -1,11 +1,16 @@
 package com.sunshineshop.entity;
 
 import java.io.Serializable;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import net.minidev.json.annotate.JsonIgnore;
 
 @Entity
 @Table(name="Customer")
@@ -35,6 +40,10 @@ public class Customer implements Serializable {
 	@Column(name="Admin")
 	private boolean admin;
 
+	@JsonIgnore
+	@OneToMany(mappedBy="customer", fetch=FetchType.EAGER)
+	private List<Order> Orders;
+	
 	public String getId() {
 		return id;
 	}
