@@ -1,0 +1,4 @@
+https://github.com/kakazaro/kakazaro.github.io/releases
+https://kakazaro.github.io/index.html
+email:hoanggeneral@gmail.com
+pass: Pass1234
